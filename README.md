@@ -6,9 +6,9 @@ Yolomy is an online shop that allows customers to purchase various unisex produc
 
 ## Products
 Here is a list of some of the products:
-	* Sportshoes
-	* Pants
-	* Jackets
+* Sportshoes
+* Pants
+* Jackets
 
 # Copyright
 
