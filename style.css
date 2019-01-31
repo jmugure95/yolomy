@@ -1,13 +1,20 @@
-.imager .jumbotron{ 
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*start header*/
+.imager .container-fluid{ 
 	margin-top:1em;
 	background-image: url('assets/backgrounds/hero.jpg');
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center, center;
     padding-top: 10em;
     padding-bottom: 54em;
     color: #ffffff;
-}
-.container{
-	background-color: grey;
 }
 
 
@@ -45,10 +52,6 @@
 
 }
 
-.checker input{
-	margin-right: 50px;
-}
-
 .scroll{
 	position: absolute;
 	top:120%;
@@ -71,40 +74,82 @@ a{
 	top: 8px;
 	right: 16px;
 }
-
-/*@media(max-width: 200px){
-
- 	.header{
- 		padding: 30px;
- 		height: 750px;
- 	}
-
- 	.header img{
- 		width:5%;
- 		height: 300px;
- 		margin: 20px 0 0 20px;
- 	}
-
- 	.header .btn{
- 		font-size: 10px;
- 		margin-left: 20px;
- 	}
- 	
- 	.header p{
- 		font-size: 10px;
- 	}
- }*/
 /*end header*/
 
 
-/*header*/
+/*selection*/
 .checker{
-	/*width: 100%;
-	min-height: 200px;*/
-	padding:20px 30px;
-	background-color: grey;
+	color: #333333;
+	font-size-adjust: 2000px;
+	text-transform: uppercase;
+	padding:50px 50px;
+	background-color: #C6BFA5;
 }
-/*end header*/
+
+
+/*.checker input{
+	margin-right: 50px;
+}*/
+
+
 .btn{
 	float:right;
+	border-color: #661A02;
+	background-color: #661A02;
 }
+
+/*end selection*/
+.package .thumbnail{        
+    width: 300px; 
+    height: 500px;
+    overflow: auto;
+}
+
+.package .thumbnail img{
+   
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*products*/
+/*.products{
+	padding: 60px;
+}
+*/
+/*.thumbnail {
+    width: 250px;
+    height: 250px;
+    padding:10px;
+   background-color: #F5F5F7;
+    position:absolute;
+}
+*/	
+}
+/*.package{
+	width: 250px;
+    height: 250px;
+    padding:50px;
+    background-color: #F5F5F7;
+    position:absolute;
+	padding:20px;
+	float: left;
+	position: relative;*//*
+*/
+}
+
+
+.products .package img{
+	padding: 30px;
+	background-color: #F5F5F7;
+    width: 200px;
+    height: 200px;
+}
+
+
+}
+hr {
+    margin: 20px 0;
+    border: 1px solid #fff;
+}
+/*endproducts*/
