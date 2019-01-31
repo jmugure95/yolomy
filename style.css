@@ -80,12 +80,10 @@ a{
 /*selection*/
 .checker{
 	color: #333333;
-	font-size-adjust: 2000px;
 	text-transform: uppercase;
 	padding:50px 50px;
 	background-color: #C6BFA5;
 }
-
 
 /*.checker input{
 	margin-right: 50px;
@@ -113,10 +111,11 @@ a{
 }
 
 /*products*/
-/*.products{
+
+.products{
 	padding: 60px;
 }
-*/
+
 /*.thumbnail {
     width: 250px;
     height: 250px;
