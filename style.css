@@ -1,4 +1,8 @@
-
+html,body{
+	margin: 0px !important;
+	padding: 0px !important;
+	overflow-x:hidden;
+}
 /*start header*/
 .imager .container-fluid{ 
 	margin-top:1em;
@@ -70,6 +74,24 @@
 	top: 8px;
 	right: 16px;
 }
+
+@media(max-width: 768px){
+
+ 	.imager{
+ 		padding: 10px;
+ 		height: 75px;
+ 	}
+
+ 	.imager img{
+ 		width:50%;
+ 		height: 200px;
+ 		margin: 10px 0 0 10px;
+ 	}
+
+ 	.imager p{
+ 		font-size: 10px;
+ 	}
+ }
 /*end header*/
 
 
@@ -81,7 +103,9 @@
 	background-color: #C6BFA5;
 }
 
-
+.checker form input{
+	margin-left: 5em;
+}
 
 
 .btn{
@@ -96,50 +120,225 @@
 
 
 /*products*/
-
-.products .img-responsive {
-    margin: 0 auto;
+.column{
+  width: 30%;
+  padding: 3em 1em 3em 3em;
+  /*padding: 10em;*/
+  
 }
+
 
 .products .row{
-	padding-top: 20px;
-	padding-left: 20px;
-}
-
-.package img:hover{
-	
-	border: 5px solid #A99B76; 
-
+  padding: 2em 5em;
+  margin-left: 6em;
+ 
 }
 
 .products img{
+	padding: 6em;
 	background-color: #F5F5F7;
-    width: 300px;
-    height: 300px;
 }
-/*endproducts*/
+.products img:hover{
+	opacity: 0.8
+
+}
+.products .row .title img{
+	/*width: 100%;*/
+	/*height: 50px;*/
+	line-height: 50px;
+	background:white;
+	text-align: left;
+
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+ @media(max-width: 768px){
+ 	
+ 	.products .column{
+ 		width: 80%;
+ 		
+ }
+   .products .column img{
+ 	height: 14em;
+ 	
+ }
+ }
+/*endproducts
+
+
+/*about*/
+.about .container-fluid{
+    /*margin-top: 40px;*/
+    height: 600px;
+	background-image: url('assets/backgrounds/about.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    padding-right: 20em;
+    padding-left: 5em;
+    padding-top: 8em;
+    padding-bottom: 15em;
+    color: #ffffff;
+    object-fit: cover;
+	
+}
+
+
+
+.strike {
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin-top: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.strike span {
+
+    position: relative;
+    display: inline-block;
+}
+
+.strike span:before,
+.strike span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9994px;
+    height: 2px;
+    background: #908361;
+}
+
+.strike span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+.stroke {
+    display: block;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin-top: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.stroke span {
+
+    position: relative;
+    display: inline-block;
+}
+
+.stroke span:before,
+.stroke span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9994px;
+    height: 2px;
+    background: #908361;
+}
+
+.stroke span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.stroke span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+
+
+/*about*/
+.about {
+  line-height: 0.4;
+  text-align: center;
+}
+  
+
+.about span {
+  display: inline-block;
+  position: relative; 
+  /*margin-right: 2em;*/
+
+  /*padding-top: 10em;*/
+ }
+
+.about p{             /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+	border: 2px solid #908361;
+	font-size: 20px;
+	line-height: 35px; /*here is the thing*/
+	border-top: none;
+	width: 1000px;
+	height: 180px;
+	padding: 32px;
+	margin-left: 4em;
+	margin-right: 6em;
+}
+
+.about span:before,
+.about span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border: 1px solid #908361;
+  top: 0;
+  width: 402px;
+
+}
+.about span:before {
+  right: 100%;
+  top: 115%;
+  margin-right: 28px;   /* jjjjjjjj*/
+}
+.about span:after {
+  left: 100%;
+  top: 115%;
+  margin-left: 4px;
+}
+
+/*end about*/
 
 /*promo*/
 .promo{
 	color: white;
+	padding-bottom: 50px;
 	font-size: 20px;
 	height: 80px;
 	background-color: #535154;
 }
 .promo p{
-	display:inline-block;
-    -webkit-transform:scale(1.2,1.4); /* Safari and Chrome */
-	padding-top: 25px;
-	padding-left: 190px;
+    -webkit-transform:scale(1.3,1.4); 
+	padding-top: 15px;
+	padding-right: 180px;
 }
 
 
-.tweet_icon{
-	position: absolute;
-	top: 234%;
-	left: -30px;
-	padding: 56px;
-	zoom:150%;
+.promo .tweet_icon{
+	position: relative;
+	top: -40px;
+	left: 10px;
+	padding-bottom: -100px;
 
 }
 
