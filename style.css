@@ -116,66 +116,14 @@ html,body{
 
 /*end selection*/
 
-
-
-
 /*products*/
-.column{
-  width: 30%;
-  padding: 3em 1em 3em 3em;
-  /*padding: 10em;*/
-  
-}
 
 
-.products .row{
-  padding: 2em 5em;
-  margin-left: 6em;
- 
-}
-
-.products img{
-	padding: 6em;
-	background-color: #F5F5F7;
-}
-.products img:hover{
-	opacity: 0.8
-
-}
-.products .row .title img{
-	/*width: 100%;*/
-	/*height: 50px;*/
-	line-height: 50px;
-	background:white;
-	text-align: left;
-
-}
-
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  
-}
-
- @media(max-width: 768px){
- 	
- 	.products .column{
- 		width: 80%;
- 		
- }
-   .products .column img{
- 	height: 14em;
- 	
- }
- }
-/*endproducts
 
 
 /*about*/
 .about .container-fluid{
-    /*margin-top: 40px;*/
+
     height: 600px;
 	background-image: url('assets/backgrounds/about.jpg');
     background-size: cover;
