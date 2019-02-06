@@ -6,15 +6,14 @@ html,body{
 
 /*start header*/
 .imager .container-fluid{ 
-	/*margin-top:1em;*/
-
+	margin-top:1em;
 	background-image: url('assets/backgrounds/hero.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center, center;
-    padding-top: 10em;
+    padding-top: 20em;
     padding-bottom: 54em;
     color: #ffffff;
 }
@@ -77,22 +76,55 @@ html,body{
 	right: 16px;
 }
 
+
 @media(max-width: 768px){
-
- 	.imager{
- 		padding: 10px;
- 		height: 75px;
- 	}
-
- 	.imager img{
- 		width:50%;
+ 	/*.imager img{
+ 		width:5%;
  		height: 200px;
- 		margin: 10px 0 0 10px;
- 	}
+ 		margin: 20px 0 0 20px;
+ 	}*/
 
- 	.imager p{
+ 	/*.imager p{
  		font-size: 10px;
+ 	}*/
+ 	.imager .container-fluid{ 
+	margin-top:0.01em;
+	}
+ 	.scroll{
+	    top:138%;
  	}
+ 	.top-left{
+	/*position: absolute;*/
+	/*top: 3px;*/
+	/*left: 1px;*/
+	padding: 18px;
+	/*font-size: 1px;*/
+
+}
+    .linker{
+    	right:10px;
+    	padding: 27px;
+    }
+ 	.linker a{
+	/*display: inline-block;*/
+	/*padding: 30px;*/
+	/*position: absolute;*/
+	/*top: -10px;*/
+	/*right: 2px;*/
+	/*margin-right: 4px;*/
+}
+.top-left img{
+	width: 100px;
+	height: 47px;
+}
+.imager h2{
+	font-size:40px;
+}
+.imager p{
+	font-size: 16px;
+	padding-top: 80px;
+}
+
  }
 /*end header*/
 
@@ -115,6 +147,14 @@ html,body{
 	border-color: #661A02;
 	background-color: #661A02;
 }
+
+ @media(max-width: 768px){
+ 	.checker form input{
+	margin-left: 0.1em;
+}
+}
+
+
 
 /*end selection*/
 
@@ -260,7 +300,26 @@ html,body{
 
 /*end products*/
 
+ @media(max-width: 768px){
+ .products .container{
+	margin: 800px auto 10px 20px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+ .products .container .box .imgBoxe img{
+ 	margin: 80px auto 10px 20px;
+	max-width: 94%;
+	padding: 3.8em;
 
+}
+
+.container .box .imgBox img{
+	max-width: 80%;
+	padding: 3.5em;
+
+}
+ 	
+ }
 /*about*/
 .about .container-fluid{
 
