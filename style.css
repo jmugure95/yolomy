@@ -1,11 +1,13 @@
+
 html,body{
-	margin: 0px !important;
-	padding: 0px !important;
-	overflow-x:hidden;
+	margin: 0px;
+	padding: 0px;
 }
+
 /*start header*/
 .imager .container-fluid{ 
-	margin-top:1em;
+	/*margin-top:1em;*/
+
 	background-image: url('assets/backgrounds/hero.jpg');
     background-size: cover;
     -webkit-background-size: cover;
@@ -21,7 +23,7 @@ html,body{
 .top-left{
 	position: absolute;
 	top: 8px;
-	left: 16px;
+	left: 1px;
 	padding: 56px;
 
 }
@@ -155,25 +157,25 @@ html,body{
   margin: 1%;
 }
 
-.container{
-	width: 1280px;
-	margin: 80px auto 90px 200px;
+.products .container{
+	width: 1200px;
+	margin: 20px auto 100px 210px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.container .box{
+.products .container .box{
 	position: relative;
 	width: 300px;
 	height: 300px;
 	background: #F5F5F3;
-	margin: 10px;
+	margin: 17px;
 	box-sizing:border-box;
 	display: inline-block;
 }
 
-.container .box .imgBox{
+.products .container .box .imgBox{
 	position: relative;
 	overflow: hidden;
 }
@@ -181,14 +183,12 @@ html,body{
 .container .box:hover{
 	border: 4px solid #A99B76;
 	transition: all 500ms ease-in-out;
-	transform: scale(1.03)
 }
 
 
 .container .box .imgBox img{
 	max-width: 90%;
 	padding: 3em;
-	transition: transform 2s;
 
 }
 
@@ -285,7 +285,7 @@ html,body{
     display: block;
     text-align: left;
     overflow: hidden;
-    white-space: nowrap; 
+    white-space: nowrap;
     margin-top: 4em;
     margin-left: 10em;
     margin-right: 10em;
@@ -302,7 +302,7 @@ html,body{
     content: "";
     position: absolute;
     top: 50%;
-    width: 9994px;
+    width: 992px;
     height: 2px;
     background: #908361;
 }
@@ -324,8 +324,8 @@ html,body{
     overflow: hidden;
     white-space: nowrap; 
     margin-top: 4em;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 1em;
+    margin-right: 17em;
 }
 
 .stroke span {
@@ -339,7 +339,7 @@ html,body{
     content: "";
     position: absolute;
     top: 50%;
-    width: 9994px;
+    width: 999px;
     height: 2px;
     background: #908361;
 }
@@ -367,23 +367,21 @@ html,body{
 .about span {
   display: inline-block;
   position: relative; 
-  /*margin-right: 2em;*/
-
-  /*padding-top: 10em;*/
  }
 
-.about p{             /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+.about p{      
 	border: 2px solid #908361;
 	font-size: 20px;
-	line-height: 35px; /*here is the thing*/
+	line-height: 35px;
 	border-top: none;
-	width: 1000px;
 	height: 180px;
 	padding: 32px;
 	margin-left: 4em;
 	margin-right: 6em;
 }
-
+.about h2{
+	top: 40;
+}
 .about span:before,
 .about span:after {
   content: "";
@@ -391,18 +389,18 @@ html,body{
   height: 1px;
   border: 1px solid #908361;
   top: 0;
-  width: 402px;
+  width: 422px;
 
 }
 .about span:before {
   right: 100%;
-  top: 115%;
-  margin-right: 28px;   /* jjjjjjjj*/
+  top: 119%;
+  margin-right: 36px;  
 }
 .about span:after {
   left: 100%;
   top: 115%;
-  margin-left: 4px;
+  margin-left: 1px;
 }
 
 /*end about*/
@@ -416,16 +414,15 @@ html,body{
 	background-color: #535154;
 }
 .promo p{
-    -webkit-transform:scale(1.3,1.4); 
-	padding-top: 15px;
-	padding-right: 180px;
+	padding-top: 20px;
+	padding-right: 390px;
 }
 
 
 .promo .tweet_icon{
 	position: relative;
 	top: -40px;
-	left: 10px;
+	left: 15px;
 	padding-bottom: -100px;
 
 }
@@ -436,7 +433,7 @@ html,body{
 .footer{
 	padding-top: 55px; 
 	text-align: left;
-	height:350px;
+	height:340px;
 	font-weight: 100px !important;
 	background-color: #414141;
 	color:#fff;
@@ -473,8 +470,6 @@ html,body{
 .footer .final p{
 	text-align: right;
 	font-size: 28px;
-	font-stretch: 100px;
-	
 }
 
 .footer img{
