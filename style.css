@@ -4,6 +4,7 @@ html,body{
 	padding: 0px;
 }
 
+
 /*start header*/
 .imager .container-fluid{ 
 	margin-top:1em;
@@ -178,7 +179,6 @@ html,body{
 }
 
 .products .container{
-	width: 1200px;
 	margin: 20px auto 100px 210px;
 	display: flex;
 	flex-direction: row;
@@ -278,59 +278,14 @@ html,body{
 	left:236px;
 }
 
-/*end products*/
-
- @media(max-width: 768px){
- .products .container{
-	margin: 5px auto 15px 70px;
-	flex-direction: column;
-}
- .container .box .imgBoxe img{
- 	/*margin: 80px auto 10px 20px;*/
-	max-width: 93%;
-	/*padding: 3.8em;*/
-
-}
-
-.container .box .imgBox img{
-	max-width: 78%;
-	/*padding: 3.5em;*/
-
-}
-.container .box:hover{
-	border: 4px solid #A99B76;
-	transition: all 500ms ease-in-out;
-}
- 	
- }
-/*about*/
-.about .container-fluid{
-
-    height: 600px;
-	background-image: url('assets/backgrounds/about.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
-    padding-right: 20em;
-    padding-left: 5em;
-    padding-top: 8em;
-    padding-bottom: 15em;
-    color: #ffffff;
-    object-fit: cover;
-	
-}
-
-
-
 .strike {
     display: block;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
     margin-top: 4em;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 17em;
+    margin-right: 15em;
 }
 
 .strike span {
@@ -344,7 +299,7 @@ html,body{
     content: "";
     position: absolute;
     top: 50%;
-    width: 992px;
+    width: 920px;
     height: 2px;
     background: #908361;
 }
@@ -367,7 +322,7 @@ html,body{
     white-space: nowrap; 
     margin-top: 4em;
     margin-left: 1em;
-    margin-right: 17em;
+    margin-right: 27em;
 }
 
 .stroke span {
@@ -381,7 +336,7 @@ html,body{
     content: "";
     position: absolute;
     top: 50%;
-    width: 999px;
+    width: 900px;
     height: 2px;
     background: #908361;
 }
@@ -395,56 +350,97 @@ html,body{
     left: 100%;
     margin-left: 15px;
 }
-
-
-
-
-/*about*/
-.about {
-  line-height: 0.4;
-  text-align: center;
+ 
+  @media(max-width: 768px){
+ .products .container{
+	margin: 5px auto 15px 70px;
+	flex-direction: column;
 }
-  
+ .container .box .imgBoxe img{
+	max-width: 93%;
+}
 
-.about span {
-  display: inline-block;
-  position: relative; 
+.container .box .imgBox img{
+	max-width: 78%;
+
+}
+.container .box:hover{
+	border: 4px solid #A99B76;
+	transition: all 500ms ease-in-out;
+}
+.strike span:before {
+    right: 100%;
+    margin-right: 50px;
+}
+
+.strike span:after {
+    left: 100%;
+    margin-left: 5px;
+}
+
+.strike {
+    margin-left: 7em;
+}
+.strike span:before,
+.strike span:after {
+    width: 800px;
+}
+.stroke {
+    margin-right: 8.5em;
+}
+
+.stroke span:before,
+.stroke span:after {
+  
+    width: 230px;
+}
+
  }
 
+/*end products*/
+ 
+/*about*/
+.about .container-fluid{
+
+    height: 600px;
+	background-image: url('assets/backgrounds/about.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    padding-right: 20em;
+    padding-left: 5em;
+    padding-top: 8em;
+    padding-bottom: 15em;
+    color: #ffffff;
+	
+}
+
 .about p{      
-	border: 2px solid #908361;
-	font-size: 20px;
+	border: 3px solid #908361;
+	font-size: 30px;
 	line-height: 35px;
-	border-top: none;
-	height: 180px;
-	padding: 32px;
-	margin-left: 4em;
-	margin-right: 6em;
+	height: 280px;
+	padding: 70px;
+	width: 80%;
+	margin-left: 6em;
+	margin-right: 8em;
 }
+
+ @media(max-width: 768px){
 .about h2{
-	top: 40;
-}
-.about span:before,
-.about span:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  border: 1px solid #908361;
-  top: 0;
-  width: 422px;
-
-}
-.about span:before {
-  right: 100%;
-  top: 119%;
-  margin-right: 36px;  
-}
-.about span:after {
-  left: 100%;
-  top: 115%;
-  margin-left: 1px;
+	width: 100%;
+	margin-left: 4em;
 }
 
+.about .container-fluid p{  
+ 		width: 230%;
+ 		margin-left: 10px;
+	font-size: 28px;
+	height: 340px;
+	padding: 35px;
+ }
+}
 /*end about*/
 
 /*promo*/
@@ -467,6 +463,22 @@ html,body{
 	left: 15px;
 	padding-bottom: -100px;
 
+}
+
+@media(max-width: 768px){
+	.promo p{
+	float: right;
+	font-size: 11px;
+	padding-top: 27px;
+	padding-right: 0.01em;
+}
+
+.promo .tweet_icon{
+	position: relative;
+	top: 18px;
+	left: -2px;
+
+}
 }
 
 /*end promo*/
@@ -519,6 +531,32 @@ html,body{
 	padding:15px;
 }
 
+
+@media(max-width: 768px){
+.footer{
+	padding-top: 3px; 
+	text-align: center;
+	height:660px;
+}
+.footer .one p{
+	text-align: center;
+	padding-bottom: 25px;
+}
+.footer img{
+	
+	padding:30px;
+}
+.footer .final h4{
+	text-align: center;
+
+}
+.footer .final p{
+	text-align: center;
+}
+.footer .final{
+	padding-top: 40px;
+}
+}
 
 /*end footer*/
 
